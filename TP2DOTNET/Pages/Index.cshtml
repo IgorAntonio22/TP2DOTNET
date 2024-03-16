@@ -1,0 +1,23 @@
+﻿@page
+@model TP2DOTNET.Pages.IndexModel
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Minha Página Razor</title>
+</head>
+<body>
+    <h1>Lista de Pessoas</h1>
+
+    <ul>
+        @foreach (var pessoa in Model.Pessoas)
+        {
+            <li>
+                Nome: @pessoa.Nome,
+                Idade: @pessoa.Idade,
+                CPF: @pessoa.CPF
+            </li>
+        }
+    </ul>
+</body>
+</html>
